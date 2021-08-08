@@ -30,7 +30,7 @@ module.exports = {
       },
       {
         "text": "Category",
-        "icon": "reco-category",
+        "icon": "reco-blog",
         "items": [
           {
             "text": "vuepress-reco",
@@ -52,15 +52,18 @@ module.exports = {
         "icon": "reco-date"
       },
       {
-        "text": "Contact",
-        "icon": "reco-message",
-        "items": [
-          {
-            "text": "GitHub",
-            "link": "https://zhanghui08.github.io/my-blog/",
-            "icon": "reco-github"
-          }
-        ]
+        // "text": "Contact",
+        "text": "GitHub",
+        // "icon": "reco-message",
+        "icon": "reco-github",
+        "link": "https://zhanghui08.github.io/my-blog/",
+        // "items": [
+        //   {
+        //     "text": "GitHub",
+        //     "link": "https://zhanghui08.github.io/my-blog/",
+        //     "icon": "reco-github"
+        //   }
+        // ]
       }
     ],
     "sidebar": {
@@ -87,7 +90,6 @@ module.exports = {
       "category": {
         "location": 3,
         "text": "Work record",
-        // "icon": "reco-message",
         "items": [
           {
             "text": "vuepress-reco",
@@ -96,7 +98,7 @@ module.exports = {
         ]
       },
       "tag": {
-        "location": 4,
+        "location": 5,
         "text": "Tag"
       }
     },
