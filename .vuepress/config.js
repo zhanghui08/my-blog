@@ -29,7 +29,7 @@ module.exports = {
         "icon": "reco-home"
       },
       {
-        "text": "Work record",
+        "text": "Category",
         "icon": "reco-category",
         "items": [
           {
@@ -86,7 +86,7 @@ module.exports = {
     "blogConfig": {
       "category": {
         "location": 3,
-        "text": "Category",
+        "text": "Work record",
         // "icon": "reco-message",
         "items": [
           {
