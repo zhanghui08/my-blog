@@ -1,7 +1,9 @@
 module.exports = {
-  "title": "my-blog",
+  "title": "Mr. Zhang's blog",
   "description": "",
-  "dest": "public",
+  // "dest": "public",
+  "serviceWorker": true, // 是否开启 PWA
+  "base": '/my-blog/', // 部署到github相关的配置
   "head": [
     [
       "link",
@@ -27,19 +29,27 @@ module.exports = {
         "icon": "reco-home"
       },
       {
-        "text": "TimeLine",
-        "link": "/timeline/",
-        "icon": "reco-date"
-      },
-      {
-        "text": "Docs",
-        "icon": "reco-message",
+        "text": "Work record",
+        "icon": "reco-category",
         "items": [
           {
             "text": "vuepress-reco",
             "link": "/docs/theme-reco/"
+          },
+          {
+            "text": "Vue",
+            "link": "/docs/vue/"
+          },
+          {
+            "text": "Git",
+            "link": "/docs/git/"
           }
         ]
+      },
+      {
+        "text": "TimeLine",
+        "link": "/timeline/",
+        "icon": "reco-date"
       },
       {
         "text": "Contact",
@@ -47,7 +57,7 @@ module.exports = {
         "items": [
           {
             "text": "GitHub",
-            "link": "https://github.com/recoluan",
+            "link": "https://zhanghui08.github.io/my-blog/",
             "icon": "reco-github"
           }
         ]
@@ -59,16 +69,34 @@ module.exports = {
         "theme",
         "plugin",
         "api"
+      ],
+      "/docs/vue/":[
+        "",
+        "theme",
+        "plugin",
+        "api",
+        "test"
+      ],
+      "/docs/git/": [
+        "",
+        "git-cy"
       ]
     },
     "type": "blog",
     "blogConfig": {
       "category": {
-        "location": 2,
-        "text": "Category"
+        "location": 3,
+        "text": "Category",
+        // "icon": "reco-message",
+        "items": [
+          {
+            "text": "vuepress-reco",
+            "link": "/docs/theme-reco/"
+          }
+        ]
       },
       "tag": {
-        "location": 3,
+        "location": 4,
         "text": "Tag"
       }
     },
@@ -86,14 +114,24 @@ module.exports = {
         "link": "https://vuepress-theme-reco.recoluan.com"
       }
     ],
-    "logo": "/logo.png",
+    "logo": "/logn-n.jpg",
     "search": true,
     "searchMaxSuggestions": 10,
     "lastUpdated": "Last Updated",
     "author": "",
-    "authorAvatar": "/avatar.png",
+    "authorAvatar": "/logn-n.jpg",
     "record": "xxxx",
     "startYear": "2017"
+  },
+  "locales":{
+    '/':{
+      'lang':'zh-CN'
+    }
+  },
+  "cursor-effects": {
+    "size": 3,                    // size of the particle, default: 2
+    "shape": ['circle'],  // shape of the particle, default: 'star'
+    "zIndex": 999999999           // z-index property of the canvas, default: 999999999
   },
   "markdown": {
     "lineNumbers": true

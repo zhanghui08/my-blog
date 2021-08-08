@@ -1,7 +1,7 @@
 ---
 home: true
-heroText: vuepress-theme-reco
-tagline: A simple and beautiful vuepress blog theme.
+heroText: If you get tired, learn to rest, not to quit...
+tagline: 沉淀、分享、成长、让自己每一天都有收获.
 # heroImage: /hero.png
 # heroImageStyle: {
 #   maxWidth: '600px',
@@ -12,7 +12,7 @@ tagline: A simple and beautiful vuepress blog theme.
 #   borderRadius: '1rem',
 # }
 bgImageStyle: {
-  height: '450px'
+  height: '220px'
 }
 isShowTitleInHome: false
 actionText: Guide

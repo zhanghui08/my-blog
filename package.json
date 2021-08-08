@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "author": "reco_luan",
   "scripts": {
-    "dev": "vuepress dev . --open --host \"localhost\"",
-    "build": "vuepress build ."
+    "dev": "vuepress dev . --open --temp .temp --host \"localhost\"",
+    "build": "vuepress build .",
+    "deploy": "bash deploy.sh"
   },
   "devDependencies": {
     "vuepress": "1.8.2",
