@@ -33,12 +33,20 @@ module.exports = {
         "icon": "reco-blog",
         "items": [
           {
-            "text": "vuepress-reco",
-            "link": "/docs/theme-reco/"
+            "text": "JavaScript",
+            "link": "/docs/javascript/"
           },
           {
             "text": "Vue",
             "link": "/docs/vue/"
+          },
+          {
+            "text": "React",
+            "link": "/docs/react/"
+          },
+          {
+            "text": "ES6",
+            "link": "/docs/es6/"
           },
           {
             "text": "Git",
@@ -67,22 +75,27 @@ module.exports = {
       }
     ],
     "sidebar": {
-      "/docs/theme-reco/": [
+      "/docs/javascript/": [
         "",
-        "theme",
-        "plugin",
-        "api"
+        "JsOptimization",
+        "JsHandwritten",
       ],
       "/docs/vue/":[
         "",
-        "theme",
-        "plugin",
-        "api",
-        "test"
+        "Component",
+        "CompositionAPI",
+        "Conclusion"
+      ],
+      "/docs/react/":[
+        "",
+      ],
+      "/docs/es6/":[
+        "",
+        "Es6Core"
       ],
       "/docs/git/": [
         "",
-        "git-cy"
+        "git"
       ]
     },
     "type": "blog",
